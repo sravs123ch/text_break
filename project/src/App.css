@@ -1,0 +1,730 @@
+.editor-text-bold {
+  font-weight: bold;
+}
+
+.editor-text-color {
+    color: "inherit"
+}
+
+.editor-text-backgroundColor {
+    background-color: "inherit"
+  }
+
+.editor-text-italic {
+  font-style: italic;
+}
+
+.editor-text-strikethrough {
+  text-decoration: line-through;
+}
+
+.editor-text-underline {
+  text-decoration: underline;
+}
+
+.editor-text-underlineStrikethrough {
+  text-decoration: underline line-through;
+}
+
+.editor-quote {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 15px;
+  color: rgb(101, 103, 107);
+  border-left-color: rgb(206, 208, 212);
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding-left: 16px;
+}
+
+.editor-list-ol {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.editor-list-ul {
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+}
+
+.editor-listitem {
+  margin: 8px 32px 8px 32px;
+}
+
+.editor-nested-listitem {
+  list-style-type: none;
+}
+
+.editor-code {
+  background-color: rgb(240, 242, 245);
+  font-family: Menlo, Consolas, Monaco, monospace;
+  display: block;
+  padding: 8px 8px 8px 52px;
+  line-height: 1.53;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  tab-size: 2;
+  /* white-space: pre; */
+  overflow-x: auto;
+  position: relative;
+}
+
+.editor-text-code {
+  background-color: #f0f2f5;
+  padding: 1px 0.25rem;
+  font-family: Menlo, Consolas, Monaco, monospace;
+  font-size: 94%;
+}
+
+.editor-code:before {
+  content: attr(data-gutter);
+  position: absolute;
+  background-color: #eee;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #ccc;
+  padding: 8px;
+  color: #777;
+  white-space: pre-wrap;
+  text-align: right;
+  min-width: 25px;
+}
+
+.other ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.link-editor .link-input {
+  display: block;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
+  margin: 8px 12px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  background-color: #eee;
+  font-size: 15px;
+  color: rgb(5, 5, 5);
+  border: 0;
+  outline: 0;
+  position: relative;
+  font-family: inherit;
+}
+
+.link-editor div.link-edit {
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 35px;
+  vertical-align: -0.25em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.link-editor .link-input a {
+  color: rgb(33, 111, 219);
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 30px;
+  text-overflow: ellipsis;
+}
+
+.link-editor .link-input a:hover {
+  text-decoration: underline;
+}
+
+.link-editor .button {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.link-editor .button.hovered {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #eee;
+}
+
+.table {
+  margin-top: 4px;
+  border-collapse: collapse;
+}
+
+.table-cell {
+  min-width:70px;
+  border: 1px solid #bbb;
+  padding-left: 6px;
+}
+
+.table-cell p {
+  margin-bottom: 4px;
+}
+
+.table-row {
+ border: 1px solid #000;
+}
+
+.table-cell-header {
+  background: #f2f3f5;
+}
+
+/* Enhanced table styles */
+.table-cell-selected {
+  background-color: #e3f2fd !important;
+  border: 2px solid #2196f3 !important;
+}
+
+.table-cell:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.table-cell-resizable {
+  position: relative;
+}
+
+.table-cell-resizable:hover {
+  border-right: 2px solid #2196f3;
+}
+
+.table-resize-handle {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 4px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: transparent;
+}
+
+.table-resize-handle:hover {
+  background-color: #2196f3;
+}
+
+/* Table context menu styles */
+.table-context-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Multi-cell selection styles */
+.table-multi-select {
+  user-select: none;
+}
+
+.table-multi-select td,
+.table-multi-select th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  position: relative;
+}
+
+.table-multi-select td:hover,
+.table-multi-select th:hover {
+  background-color: #f5f5f5;
+}
+
+/* Table cell background colors */
+.table-cell-bg-light {
+  background-color: #f8f9fa;
+}
+
+.table-cell-bg-primary {
+  background-color: #e3f2fd;
+}
+
+.table-cell-bg-secondary {
+  background-color: #f3e5f5;
+}
+
+.table-cell-bg-success {
+  background-color: #e8f5e8;
+}
+
+.table-cell-bg-warning {
+  background-color: #fff3cd;
+}
+
+.table-cell-bg-danger {
+  background-color: #f8d7da;
+}
+
+/* Table hover menu styles */
+.table-hover-menu {
+  position: fixed;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+  padding: 4px;
+}
+
+.table-hover-menu button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.table-hover-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.table-hover-menu .divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 4px 0;
+}
+
+.ExampleEditorTheme__tableSelection *::selection {
+  background-color: transparent;
+}
+.ExampleEditorTheme__tableSelected {
+  outline: 2px solid rgb(60, 132, 244);
+}
+.ExampleEditorTheme__tableCell {
+  border: 1px solid #bbb;
+  width: 75px;
+  min-width: 75px;
+  vertical-align: top;
+  text-align: start;
+  padding: 6px 8px;
+  position: relative;
+  outline: none;
+}
+.ExampleEditorTheme__tableCellResizer {
+  position: absolute;
+  right: -4px;
+  height: 100%;
+  width: 8px;
+  cursor: ew-resize;
+  z-index: 10;
+  top: 0;
+}
+.ExampleEditorTheme__tableCellSelected {
+  caret-color: transparent;
+}
+
+
+.PlaygroundEditorTheme__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  overflow-y: scroll;
+  table-layout: fixed;
+  width: 100%;
+  margin: 20px 0;
+}
+.PlaygroundEditorTheme__tableSelected {
+  outline: 2px solid rgb(60, 132, 244);
+}
+.PlaygroundEditorTheme__tableCell {
+  border: 1px solid #bbb;
+  min-width: 75px;
+  vertical-align: top;
+  text-align: start;
+  padding: 6px 8px;
+  position: relative;
+  cursor: default;
+  outline: none;
+}
+.PlaygroundEditorTheme__tableCellSortedIndicator {
+  display: block;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #999;
+}
+.PlaygroundEditorTheme__tableCellResizer {
+  position: absolute;
+  right: -4px;
+  height: 100%;
+  width: 8px;
+  cursor: ew-resize;
+  z-index: 10;
+  top: 0;
+}
+.PlaygroundEditorTheme__tableCellHeader {
+  background-color: #f2f3f5;
+  text-align: start;
+}
+.PlaygroundEditorTheme__tableCellSelected {
+  background-color: #c9dbf0;
+}
+.PlaygroundEditorTheme__tableCellPrimarySelected {
+  border: 2px solid rgb(60, 132, 244);
+  display: block;
+  height: calc(100% - 2px);
+  position: absolute;
+  width: calc(100% - 2px);
+  left: -1px;
+  top: -1px;
+  z-index: 2;
+}
+.PlaygroundEditorTheme__tableCellEditing {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+.PlaygroundEditorTheme__tableAddColumns {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  background-color: #eee;
+  height: 100%;
+  right: 0;
+  animation: table-controls 0.2s ease;
+  border: 0;
+  cursor: pointer;
+}
+.PlaygroundEditorTheme__tableAddColumns:after {
+  background-image: url(../images/icons/plus.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.PlaygroundEditorTheme__tableAddColumns:hover {
+  background-color: #c9dbf0;
+}
+.PlaygroundEditorTheme__tableAddRows {
+  position: absolute;
+  bottom: -25px;
+  width: calc(100% - 25px);
+  background-color: #eee;
+  height: 20px;
+  left: 0;
+  animation: table-controls 0.2s ease;
+  border: 0;
+  cursor: pointer;
+}
+.PlaygroundEditorTheme__tableAddRows:after {
+  background-image: url(../images/icons/plus.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.PlaygroundEditorTheme__tableAddRows:hover {
+  background-color: #c9dbf0;
+}
+@keyframes table-controls {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.PlaygroundEditorTheme__tableCellResizeRuler {
+  display: block;
+  position: absolute;
+  width: 1px;
+  background-color: rgb(60, 132, 244);
+  height: 100%;
+  top: 0;
+}
+.PlaygroundEditorTheme__tableCellActionButtonContainer {
+  display: block;
+  right: 5px;
+  top: 6px;
+  position: absolute;
+  z-index: 4;
+  width: 20px;
+  height: 20px;
+}
+.PlaygroundEditorTheme__tableCellActionButton {
+  background-color: #eee;
+  display: block;
+  border: 0;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  color: #222;
+  cursor: pointer;
+}
+.PlaygroundEditorTheme__tableCellActionButton:hover {
+  background-color: #ddd;
+}
+
+.TableCellResizer__resizer {
+  position: absolute;
+}
+
+.TableNode__contentEditable {
+  min-height: 20px;
+  border: 0px;
+  resize: none;
+  cursor: text;
+  display: block;
+  position: relative;
+  tab-size: 1;
+  outline: 0px;
+  padding: 0;
+  user-select: text;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  z-index: 3;
+}
+
+.dropdown {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  min-height: 40px;
+  background-color: #fff;
+}
+
+.dropdown .item {
+  margin: 0 8px 0 8px;
+  padding: 8px;
+  color: #050505;
+  cursor: pointer;
+  line-height: 16px;
+  font-size: 15px;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0;
+  max-width: 250px;
+  min-width: 100px;
+}
+
+.dropdown .item.fontsize-item,
+.dropdown .item.fontsize-item .text {
+  min-width: unset;
+}
+
+.dropdown .item .active {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+.dropdown .item:first-child {
+  margin-top: 8px;
+}
+
+.dropdown .item:last-child {
+  margin-bottom: 8px;
+}
+
+.dropdown .item:hover {
+  background-color: #eee;
+}
+
+.dropdown .item .text {
+  display: flex;
+  line-height: 20px;
+  flex-grow: 1;
+  min-width: 150px;
+}
+
+.dropdown .item .icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  margin-right: 12px;
+  line-height: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dropdown .divider {
+  width: auto;
+  background-color: #eee;
+  margin: 4px 8px;
+  height: 1px;
+}
+
+@media screen and (max-width: 1100px) {
+  .dropdown-button-text {
+    display: none !important;
+  }
+  .font-size .dropdown-button-text {
+    display: flex !important;
+  }
+  .code-language .dropdown-button-text {
+    display: flex !important;
+  }
+}
+
+.editor-container {
+  background: #fff;
+  margin: 20px auto 20px auto;
+  border-radius: 2px;
+  max-width: 600px;
+  color: #000;
+  position: relative;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.editor-input {
+  min-height: 150px;
+  resize: none;
+  font-size: 15px;
+  caret-color: rgb(5, 5, 5);
+  position: relative;
+  tab-size: 1;
+  outline: 0;
+  padding: 0px 0px 5px;
+  caret-color: #444;
+}
+
+.editor-placeholder {
+  color: #999;
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 53px;
+  left: 27px;
+  font-size: 15px;
+  user-select: none;
+  display: inline-block;
+  pointer-events: none;
+}
+
+.editor-paragraph {
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.table-cell-action-button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.table-cell-action-button {
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  position: relative;
+  border-radius: 15px;
+  color: #222;
+  display: inline-block;
+  background-color: rgb(228, 228, 228);
+  cursor: pointer;
+}
+
+i.chevron-down {
+  background-color: transparent;
+  background-size: contain;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Feather-arrows-chevron-down.svg/480px-Feather-arrows-chevron-down.svg.png");
+}
+
+.toolbar {
+  display: flex;
+  margin-bottom: 1px;
+  background: #fff;
+  padding: 4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  vertical-align: middle;
+  overflow: auto;
+  height: 36px;
+}
+
+.toolbar button.toolbar-item {
+  border: 0;
+  display: flex;
+  background: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(223, 223, 223);
+}
+
+.toolbar button.toolbar-item.spaced {
+  margin: 5px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.toolbar .toolbar-item:hover:not([disabled]) {
+  background-color: #eee;
+}
+
+.toolbar .toolbar-item.font-family .text {
+  display: block;
+  max-width: 40px;
+}
+
+.toolbar .toolbar-item .text {
+  display: flex;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: rgb(104, 104, 104);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 20px;
+  text-align: left;
+}
